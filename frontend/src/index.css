@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scrollbar-width: thin;    
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    font-size: large;
+}
