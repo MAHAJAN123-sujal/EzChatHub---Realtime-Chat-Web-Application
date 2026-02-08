@@ -19,7 +19,7 @@ app.use(cors({
         origin:[
                 'http://localhost:5173',
                 'http://realtime-chat-app.netlify.app'
-        ]
+        ],
         credentials:true,
     }))
 
