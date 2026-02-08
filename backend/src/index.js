@@ -18,7 +18,7 @@ app.use(cookieParser())
 app.use(cors({
         origin:[
                 'http://localhost:5173',
-                'http://realtime-chat-app.netlify.app'
+                'http://realtime-chat-app-mahajan.netlify.app'
         ],
         credentials:true,
     }))
