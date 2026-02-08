@@ -5,11 +5,15 @@ import express from 'express'
 const app = express();
 const server = http.createServer(app)
 
-const io = new Server(server,{
-    cors:{
-        origin: ['http://localhost:5173'],
-    }
-})
+const io = new Server(server, {
+  cors: {
+    origin: [
+      "http://localhost:5173",
+      "https://realtime-chat-app-mahajan.netlify.app"
+    ]
+  },
+});
+
 
 export const getUserSocketId = (userId) =>{
     return userSocketMap[userId];
