@@ -16,7 +16,10 @@ import { connectDB } from './lib/db.js';
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-        origin:'http://localhost:5173',
+        origin:[
+                'http://localhost:5173',
+                'http://realtime-chat-app.netlify.app'
+        ]
         credentials:true,
     }))
 
